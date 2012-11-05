@@ -1,0 +1,7 @@
+
+    <resources>
+        <string-array name="tur">
+            <item >Kadrolu Ögretmen</item>
+            <item >Sözleşmeli Ögretmen</item>
+        </string-array>
+    </resources>
