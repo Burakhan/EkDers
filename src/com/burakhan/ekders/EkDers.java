@@ -10,6 +10,7 @@ public class EkDers extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+    	//ilk view oluşturma
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ek_ders);
     }
