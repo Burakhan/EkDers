@@ -4,4 +4,8 @@
             <item >Kadrolu Ögretmen</item>
             <item >Sözleşmeli Ögretmen</item>
         </string-array>
+        <array name="tur_degeri">
+		    <item>18</item>
+		    <item>8</item>
+		</array>
     </resources>

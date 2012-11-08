@@ -5,18 +5,19 @@
     android:layout_height="wrap_content"
     android:gravity="top"
     android:orientation="vertical" >
+
 	<TextView
-        android:id="@+id/textView1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Ünvan Seçiniz"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-	
-    <Spinner
-        android:id="@+id/tur"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:entries="@array/tur" />
+	    android:id="@+id/textView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Ünvan Seçiniz"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<Spinner
+	    android:id="@+id/tur"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:entries="@array/tur" />
 
 </LinearLayout>

@@ -10,6 +10,7 @@ package com.burakhan.ekders;
 public final class R {
     public static final class array {
         public static final int tur=0x7f040000;
+        public static final int tur_degeri=0x7f040001;
     }
     public static final class attr {
     }
