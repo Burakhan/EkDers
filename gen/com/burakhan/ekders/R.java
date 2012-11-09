@@ -9,8 +9,8 @@ package com.burakhan.ekders;
 
 public final class R {
     public static final class array {
-        public static final int tur=0x7f040000;
         public static final int tur_degeri=0x7f040001;
+        public static final int turler=0x7f040000;
     }
     public static final class attr {
     }
@@ -25,12 +25,14 @@ public final class R {
     }
     public static final class id {
         public static final int LinearLayout1=0x7f090000;
-        public static final int menu_settings=0x7f090003;
+        public static final int button1=0x7f090003;
+        public static final int menu_settings=0x7f090004;
         public static final int textView1=0x7f090001;
         public static final int tur=0x7f090002;
     }
     public static final class layout {
         public static final int activity_ek_ders=0x7f030000;
+        public static final int ornekform=0x7f030001;
     }
     public static final class menu {
         public static final int activity_ek_ders=0x7f080000;
