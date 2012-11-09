@@ -2,10 +2,37 @@
     <resources>
         <string-array name="turler">
             <item >Kadrolu Ögretmen</item>
-            <item >Sözleşmeli Ögretmen</item>
+            <item >Ücretli Ögretmen</item>
         </string-array>
         <array name="tur_degeri">
-		    <item>18</item>
-		    <item>8</item>
+		    <item>kadrolu</item>
+		    <item>ucretli</item>
 		</array>
+		<string-array name="ogrenim">
+            <item >Normal Eğitim</item>
+            <item >Özel Eğitim</item>
+        </string-array>
+        <array name="ogrenim_degeri">
+		    <item>1</item>
+		    <item>1.25</item>
+		</array>
+		<string-array name="lisans">
+            <item >Lisans</item>
+            <item >Yüksek Lisans</item>
+            <item >Doktora</item>
+        </string-array>
+        <array name="lisans_degeri">
+		    <item>1</item>
+		    <item>1.05</item>
+		    <item>1.1</item>
+		    <item></item>
+		</array>
+		<string-array name="vergi">
+		   <item >%15</item> 
+		   <item>%20</item>
+		</string-array>
+		<string-array name="vergi_degeri">
+		    <item >85</item>
+		    <item >80</item>
+		</string-array>
     </resources>
