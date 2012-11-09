@@ -31,8 +31,8 @@
 		   <item >%15</item> 
 		   <item>%20</item>
 		</string-array>
-		<string-array name="vergi_degeri">
+		<integer-array name="vergi_degeri">
 		    <item >85</item>
 		    <item >80</item>
-		</string-array>
+		</integer-array>
     </resources>

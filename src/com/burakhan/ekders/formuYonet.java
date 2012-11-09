@@ -6,6 +6,7 @@ import java.text.DecimalFormat;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -28,15 +29,20 @@ public class formuYonet extends Activity{
 					final EditText gunduzTxt = (EditText) findViewById(R.id.gunduz);       
 					final float gunduz = Float.parseFloat(gunduzTxt.getText().toString());
 					float sonuc = gunduz*(float)(0.071589)*140;
-					sonuc += gunduz*(float)(0.071589)*150;
-					damga = (float) 0.00066*sonuc;
+					Log.d("Soc",String.valueOf(sonuc));
+					
+					damga = (float) (66*sonuc)/10000;
 					sonuc = sonuc-damga;
+					Log.d("Damga",String.valueOf(sonuc));
 					Spinner spinner = (Spinner) findViewById(R.id.vergisec);
-					int pos = spinner.getSelectedItemPosition();
-					int[] vergidegerleri = getResources().getIntArray(R.array.vergi_degeri);
-					final float vergidegeri = vergidegerleri[pos];
+					final int position = spinner.getSelectedItemPosition();
+					Log.d("pos",String.valueOf(position));
+					final int[] vergidegerleri = getResources().getIntArray(R.array.vergi_degeri);
+					final int vergidegeri = vergidegerleri[position];
+					Log.d("vergidegerleri",vergidegerleri.toString());
+					Log.d("vergidegeri",String.valueOf(vergidegeri));
 					sonuc = (float)(vergidegeri*sonuc)/100;
-					sonuc = vergidegeri;
+					Log.d("SOnuc",String.valueOf(sonuc));
 					DecimalFormat df = new DecimalFormat(".##");
 					TextView sonucTxt = (TextView) findViewById(R.id.sonuc);
 					sonucTxt.setText(String.valueOf(df.format(sonuc)));
