@@ -16,12 +16,11 @@
             android:label="@string/title_activity_ek_ders" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>kadrolukadrolu
-        <activity android:name="formuYonet"></activity>
-        
+        </activity>
+        <activity android:name="kadrolu"></activity>
+        <activity android:name="ucretli"></activity>
     </application>
 
 </manifest>

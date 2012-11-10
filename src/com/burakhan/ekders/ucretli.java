@@ -15,9 +15,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 
-public class formuYonet extends Activity{
+public class ucretli extends Activity{
 
 	public float damga;
+	public float sonuc = 0;
 	@Override
 	public void onCreate(Bundle savedInstanceState)
 	{
@@ -28,24 +29,35 @@ public class formuYonet extends Activity{
 				public void onClick(View v) {
 					final EditText gunduzTxt = (EditText) findViewById(R.id.gunduz);       
 					final float gunduz = Float.parseFloat(gunduzTxt.getText().toString());
-					float sonuc = gunduz*(float)(0.071589)*140;
-					Log.d("Soc",String.valueOf(sonuc));
+					if(gunduz > 0) {
+						sonuc += gunduz*(float)(0.071589)*140;
+						Log.d("Soc",String.valueOf(sonuc));
+					}
+					final EditText geceTxt = (EditText) findViewById(R.id.gece);       
+					final float gece = Float.parseFloat(geceTxt.getText().toString());
+					if(gece > 0) {
+						sonuc += gunduz*(float)(0.071589)*150;
+					}
 					
 					damga = (float) (66*sonuc)/10000;
 					sonuc = sonuc-damga;
-					Log.d("Damga",String.valueOf(sonuc));
 					Spinner spinner = (Spinner) findViewById(R.id.vergisec);
-					final int position = spinner.getSelectedItemPosition();
-					Log.d("pos",String.valueOf(position));
+					int position = spinner.getSelectedItemPosition();
 					final int[] vergidegerleri = getResources().getIntArray(R.array.vergi_degeri);
 					final int vergidegeri = vergidegerleri[position];
-					Log.d("vergidegerleri",vergidegerleri.toString());
-					Log.d("vergidegeri",String.valueOf(vergidegeri));
+					
+					
 					sonuc = (float)(vergidegeri*sonuc)/100;
-					Log.d("SOnuc",String.valueOf(sonuc));
+					
+					spinner = (Spinner) findViewById(R.id.ogrenim);
+					position = spinner.getSelectedItemPosition();
+					final int[] ogrenimdegerleri = getResources().getIntArray(R.array.ogrenim_degeri);
+					final int ogrenim = ogrenimdegerleri[position];
+					sonuc = (float)(ogrenim*sonuc);
+					
 					DecimalFormat df = new DecimalFormat(".##");
 					TextView sonucTxt = (TextView) findViewById(R.id.sonuc);
-					sonucTxt.setText(String.valueOf(df.format(sonuc)));
+					sonucTxt.setText(String.valueOf(df.format(sonuc)+" TL"));
 					    
 					
 				}

@@ -1,9 +1,5 @@
 package com.burakhan.ekders;
 
-
-
-
-
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
@@ -17,7 +13,7 @@ import android.widget.AdapterView.OnItemSelectedListener;
 
 public class EkDers extends Activity {
 
-	public static String Open_Form = "kadrolu";	
+	public Integer FormOpenView = 1;	
 
 	@Override
     public void onCreate(Bundle savedInstanceState) {
@@ -28,8 +24,8 @@ public class EkDers extends Activity {
        
         spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-            	final String[] yuzdedegerleri = getResources().getStringArray(R.array.tur_degeri);
-     	        Open_Form = yuzdedegerleri[position];
+            	final int[] yuzdedegerleri = getResources().getIntArray(R.array.tur_degeri);
+            	FormOpenView = yuzdedegerleri[position];
             }
 
             public void onNothingSelected(AdapterView<?> parentView) {
@@ -44,9 +40,18 @@ public class EkDers extends Activity {
 			
 			public void onClick(View v) {
 				final Intent intent = new Intent();
+				switch (FormOpenView) {
+				case 1:
+					intent.setClass(EkDers.this,kadrolu.class);
+					break;
+				case 2:
+					intent.setClass(EkDers.this,kadrolu.class);
+					break;
+				default:
+					break;
+				}
 				
-				intent.setClass(EkDers.this,formuYonet.class);
-				intent.putExtra(Open_Form, Open_Form);
+				//intent.putExtra(Open_Form, Open_Form);
 				startActivity(intent);
 				    
 				

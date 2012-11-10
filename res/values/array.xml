@@ -5,16 +5,16 @@
             <item >Ücretli Ögretmen</item>
         </string-array>
         <array name="tur_degeri">
-		    <item>kadrolu</item>
-		    <item>ucretli</item>
+		    <item>1</item>
+		    <item>2</item>
 		</array>
 		<string-array name="ogrenim">
             <item >Normal Eğitim</item>
             <item >Özel Eğitim</item>
         </string-array>
         <array name="ogrenim_degeri">
-		    <item>1</item>
-		    <item>1.25</item>
+		    <item>0</item>
+		    <item>25</item>
 		</array>
 		<string-array name="lisans">
             <item >Lisans</item>
@@ -22,9 +22,9 @@
             <item >Doktora</item>
         </string-array>
         <array name="lisans_degeri">
-		    <item>1</item>
-		    <item>1.05</item>
-		    <item>1.1</item>
+		    <item>0</item>
+		    <item>5</item>
+		    <item>10</item>
 		    <item></item>
 		</array>
 		<string-array name="vergi">
