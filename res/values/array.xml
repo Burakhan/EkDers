@@ -2,7 +2,6 @@
     <resources>
         <string-array name="turler">
             <item >Kadrolu Ögretmen</item>
-            <item >Ücretli Ögretmen</item>
         </string-array>
         <array name="tur_degeri">
 		    <item>1</item>

@@ -29,14 +29,14 @@ public class kadrolu extends Activity{
 					String gunduzDeger = gunduzTxt.getText().toString();
 					if(gunduzDeger.length()>0) 
 						gunduz = Float.parseFloat(gunduzDeger);
-					sonuc += gunduz*(float)(0.071589)*140;
+					sonuc += gunduz*(float)(0.073737)*140;
 					final EditText geceTxt = (EditText) findViewById(R.id.gece);       
 					String geceDeger = geceTxt.getText().toString();
 					
 					if(geceDeger.length()>0) {
 						gece = Float.parseFloat(geceDeger);
 					}
-					sonuc += gece*(float)(0.071589)*150;
+					sonuc += gece*(float)(0.073737)*150;
 					
 					
 					Spinner spinner = (Spinner) findViewById(R.id.ogrenim);
