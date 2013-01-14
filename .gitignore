@@ -1,0 +1,5 @@
+_resource/*
+/.project
+.settings/*
+/.buildpath
+proguard-project.txt
