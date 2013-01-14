@@ -26,15 +26,7 @@
         android:layout_height="fill_parent"
         android:layout_margin="@dimen/padding_large"
         android:text="Devam Et" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Eğer ücretli öğretmen Ek-Ders hesabında asgari geçim indirimi işçi payı gibi giderlerin nasıl yapıldığını biliyor iseniz. Formül şeklinde yazmanız halinde hemen ekleyebilirim. "
-        android:textSize="@dimen/padding_large" />
-
-    <TextView
+    <TextView
         android:id="@+id/TextView01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
