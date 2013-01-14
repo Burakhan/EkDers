@@ -1,7 +1,8 @@
 
     <resources>
         <string-array name="turler">
-            <item >Kadrolu Ögretmen</item>
+            <item >Kadrolu Öğretmen</item>
+            <item >Ücretli Öğretmen</item>
         </string-array>
         <array name="tur_degeri">
 		    <item>1</item>
@@ -31,7 +32,50 @@
 		   <item>%20</item>
 		</string-array>
 		<integer-array name="vergi_degeri">
-		    <item >85</item>
-		    <item >80</item>
+		    <item >15</item>
+		    <item >20</item>
 		</integer-array>
+		<string-array name="statu">
+		   <item >Ücretli Öğretmen</item> 
+		   <item >Uzman</item> 
+		   <item >Usta Öğretici</item> 
+		   
+		</string-array>
+		<string-array name="statu_deger">
+		   <item >14</item> 
+		   <item >14</item> 
+		   <item >14</item> 
+		  
+		</string-array>
+		
+		<string-array name="agi">
+		   <item >Bekar</item> 
+		   <item >Evli eşi çalışan</item> 
+		   <item >Evli eşi çalışan 1 çocuk</item> 
+		   <item >Evli eşi çalışan 2 çocuk</item> 
+		   <item >Evli eşi çalışan 3 çocuk</item> 
+		   <item >Evli eşi çalışan 4 çocuk</item> 
+		   <item >Evli eşi çalışan 5 çocuk</item> 
+		   <item >Evli eşi çalışan 6 ve üzeri çocuk</item> 
+		   <item >Evli eşi çalışmayan</item> 
+		   <item >Evli eşi çalışmayan 1 çocuk</item> 
+		   <item >Evli eşi çalışmayan 2 çocuk</item> 
+		   <item >Evli eşi çalışmayan 3 çocuk</item> 
+		   <item >Evli eşi çalışmayan 4 ve üzeri çocuk</item> 
+		</string-array>
+		<string-array name="agi_deger">
+		    <item >50</item>
+		    <item >50</item>
+		    <item >57.5</item>
+		    <item >65</item>
+		    <item >70</item>
+		    <item >75</item>
+		    <item >80</item>
+		    <item >85</item>
+		    <item >60</item>
+		    <item >67.5</item>
+		    <item >75</item>
+		    <item >80</item>
+		    <item >85</item>
+		</string-array>
     </resources>

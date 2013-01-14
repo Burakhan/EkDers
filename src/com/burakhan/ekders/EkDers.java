@@ -37,7 +37,6 @@ public class EkDers extends Activity {
         });
         Button btnFormaGit = (Button)findViewById(R.id.button1);
         btnFormaGit.setOnClickListener(new OnClickListener() {
-			
 			public void onClick(View v) {
 				final Intent intent = new Intent();
 				switch (FormOpenView) {
@@ -45,7 +44,7 @@ public class EkDers extends Activity {
 					intent.setClass(EkDers.this,kadrolu.class);
 					break;
 				case 2:
-					intent.setClass(EkDers.this,kadrolu.class);
+					intent.setClass(EkDers.this,ucretli.class);
 					break;
 				default:
 					break;

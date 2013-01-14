@@ -21,6 +21,7 @@
         </activity>
         <activity android:name="kadrolu"></activity>
         <activity android:name="ucretli"></activity>
+        <activity android:name="sonuc"></activity>
     </application>
 
 </manifest>
