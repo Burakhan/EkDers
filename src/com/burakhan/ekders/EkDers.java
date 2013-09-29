@@ -29,7 +29,7 @@ public class EkDers extends Activity {
             }
 
             public void onNothingSelected(AdapterView<?> parentView) {
-                // your code here
+                //buraya bir şeyler yaz
             }
 
 			
